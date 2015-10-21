@@ -2,9 +2,9 @@
     <div class="pure-menu pure-menu-open">
         <ul>
             <li class="pure-menu-selected">
-                <a href="{:U('w3g/Public/home')}">
+                <a href="{:U('w3g/Public/index')}">
                     <div class="sidebar-ico sidebar-home"></div>
-                    <div>广场</div>
+                    <div>首页</div>
                 </a>
             </li>
             <li>
@@ -33,9 +33,9 @@
     <div class="pure-menu pure-menu-open">
         <ul>
             <li <php>if($_GET['mod']=='Public' && $_GET['act'] == 'home'){</php>class="pure-menu-selected"<php>}</php>>
-                <a href="{:U('w3g/Public/home')}">
+                <a href="{:U('w3g/Public/index')}">
                     <div class="sidebar-ico sidebar-home"></div>
-                    <div>广场</div>
+                    <div>首页</div>
                 </a>
             </li>
             <li <php>if($_GET['mod']=='Index' && ($_GET['act'] == 'all' || $_GET['act'] == 'weibo')){</php>class="pure-menu-selected"<php>}</php>>
