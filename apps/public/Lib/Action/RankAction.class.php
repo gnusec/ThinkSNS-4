@@ -4,7 +4,7 @@
  * @author Stream
  *
  */
-class RankAction extends Action{
+class RankActionNO extends Action{
 	
 	public function index(){
 		$type = $_GET['type'] ? intval($_GET['type']) : 1;
