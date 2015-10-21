@@ -80,7 +80,7 @@
                       <input type="hidden" name="a" value="public"/>
                       <dl>
                         <dt class="clearfix">
-                          <input id="search_input" class="s-txt left"  type="text" placeholder="搜人/分享/微吧/帖子" value="" event-node="searchKey" name='k'  autocomplete="off">
+                          <input id="search_input" class="s-txt left"  type="text" placeholder="搜人/分享/帖子" value="" event-node="searchKey" name='k'  autocomplete="off">
                         </dt>
                       </dl>
                     </form>
@@ -139,7 +139,7 @@
                     <dd><a href="{:U('public/Account/index')}"><i class="ico-mysetup"></i>个人设置</a></dd>
                     <dd><a href="{:U('public/Rank/index','type=2')}"><i class="ico-mypoints"></i>排行榜</a></dd>
                     <php>if(CheckTaskSwitch()):</php>
-                      <dd><a href="{:U('public/Task/index')}"><i class="ico-mytask"></i>任务中心</a></dd>
+                      <!-- <dd><a href="{:U('public/Task/index')}"><i class="ico-mytask"></i>任务中心</a></dd> -->
                       <dd><a href="{:U('public/Medal/index')}"><i class="ico-mymedal"></i>勋章馆</a></dd>
                     <php>endif;</php> 
                     <php>if(!isVerified($user['uid'])):</php>

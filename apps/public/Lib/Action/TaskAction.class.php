@@ -4,7 +4,7 @@
  * @author Stream
  *
  */
-class TaskAction extends Action{
+class TaskActionNo extends Action{
 	
 	function __construct(){
 		parent::__construct();
