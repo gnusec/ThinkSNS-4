@@ -4,7 +4,7 @@
  * @author Stream
  *
  */
-class MedalAction extends Action{
+class MedalActionNO extends Action{
 	public function __construct(){
 		parent::__construct();
 		if( !CheckTaskSwitch() ){
