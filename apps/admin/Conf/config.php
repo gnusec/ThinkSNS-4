@@ -30,7 +30,7 @@ $menu = array(
 				'缓存配置'                           => U('admin/Home/cacheConfig'),
 				'数据备份'                           => U('admin/Tool/backup'),
 				'异常处理'                           => U('admin/Tool/index'),
-				'在线升级'                           => U('admin/Upgrade/check'),			
+				// '在线升级'                           => U('admin/Upgrade/check'),			
 			)
 		),
 

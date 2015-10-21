@@ -7,7 +7,7 @@ tsload(APPS_PATH . '/admin/Lib/Action/AdministratorAction.class.php');
  * @package ThinkSNS.admin.upgrade
  * @author Medz Seven <lovevipdsw@vip.qq.com>
  **/
-class UpgradeAction extends AdministratorAction
+class UpgradeActionNO extends AdministratorAction
 {
 
 	/**

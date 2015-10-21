@@ -139,8 +139,8 @@
                     <dd><a href="{:U('public/Account/index')}"><i class="ico-mysetup"></i>个人设置</a></dd>
                     <dd><a href="{:U('public/Rank/index','type=2')}"><i class="ico-mypoints"></i>排行榜</a></dd>
                     <php>if(CheckTaskSwitch()):</php>
-                      <!-- <dd><a href="{:U('public/Task/index')}"><i class="ico-mytask"></i>任务中心</a></dd> -->
-                      <dd><a href="{:U('public/Medal/index')}"><i class="ico-mymedal"></i>勋章馆</a></dd>
+                     <!--  <dd><a href="{:U('public/Task/index')}"><i class="ico-mytask"></i>任务中心</a></dd>
+                      <dd><a href="{:U('public/Medal/index')}"><i class="ico-mymedal"></i>勋章馆</a></dd> -->
                     <php>endif;</php> 
                     <php>if(!isVerified($user['uid'])):</php>
                     <dd><a href="{:U('public/Account/authenticate')}"><i class="ico-certification"></i>申请认证</a></dd>
