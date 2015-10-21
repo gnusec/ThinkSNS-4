@@ -404,7 +404,7 @@ class IndexAction extends BaseAction {
 	 * $this->display('resetScrollDownRefresh');
 	 * }
 	 */
-	// 分享广场
+	// 分享首页
 	public function resetScrollDownRefreshSquare() {
 		$data ['page'] = $this->_page;
 		$data ['count'] = 11;
@@ -413,14 +413,14 @@ class IndexAction extends BaseAction {
 		// $weibolist = $this->__formatByFavorite($weibolist);
 		$weibolist = $this->__formatByContent ( $weibolist );
 		$this->assign ( 'weibolist', $weibolist );
-		$this->assign ( 'headtitle', '下拉刷新for广场' );
+		$this->assign ( 'headtitle', '下拉刷新for首页' );
 		// 分页模块
 		$count = D ( 'W3gPage', 'w3g' )->getAllWeiboCount ( $data ['type'], $data ['user_id'] );
 		$this->assign ( 'count', $count );
 		$this->display ( 'resetScrollDownRefreshSquare' );
 	}
 	
-	// 分享广场
+	// 分享首页
 	public function publicsquare() {
 		$data ['page'] = $this->_page;
 		$data ['count'] = 10;
@@ -428,7 +428,7 @@ class IndexAction extends BaseAction {
 		// $weibolist = $this->__formatByFavorite($weibolist);
 		$weibolist = $this->__formatByContent ( $weibolist );
 		$this->assign ( 'weibolist', $weibolist );
-		$this->assign ( 'headtitle', '分享广场' );
+		$this->assign ( 'headtitle', '分享首页' );
 		// 分页模块
 		$count = D ( 'W3gPage', 'w3g' )->getAllWeiboCount ( $data ['type'], $data ['user_id'] );
 		$this->assign ( 'count', $count );

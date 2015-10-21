@@ -578,13 +578,13 @@ $(document).on('tap','#shadow',function(){
 		menubox2skip(U("w3g/Index/weibo")+"&uid="+app_id,'载入作者主页中');
 		$(".c_mousedown").removeClass("c_mousedown");
 	});
-	//进入分享广场
+	//进入分享首页
 	$(document).on('tap','#open_square',function(){
-		menubox2skip(U('w3g/Index/index'),'载入分享广场中');
+		menubox2skip(U('w3g/Index/index'),'载入分享首页中');
 		$(".c_mousedown").removeClass("c_mousedown");
 	});
 	$(document).on('tap','#sys_menu_square',function(){
-		sysmenu2skip(U("w3g/Index/index"),'载入分享广场中');
+		sysmenu2skip(U("w3g/Index/index"),'载入分享首页中');
 	});
 	//退出登录
 	$(document).on('tap','#sys_menu_quit',function(){
