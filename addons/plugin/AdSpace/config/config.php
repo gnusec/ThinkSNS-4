@@ -13,5 +13,5 @@ return array(
 	/*'weiba_post_top' => array('id'=>'13','name'=>'微吧帖子中部','key'=>'weiba_post_top','width'=>670),*/
 	/*'weiba_post_right' => array('id'=>'14','name'=>'微吧帖子右下','key'=>'weiba_post_right','width'=>240, 'top'=>10),*/
 	/*'w3g_home_top' => array('id'=>'101','name'=>'首页顶部广告','key'=>'w3g_home_top','width'=>448,'preview'=>'w3g_preview2','tpl'=>'w3g_showAdSpace2'),*/
-	'home_top' => array('id'=>'15','name'=>'首页首页顶部','key'=>'home_top','width'=>700, 'height'=>380),
+	'home_top' => array('id'=>'15','name'=>'广场首页顶部','key'=>'home_top','width'=>700, 'height'=>380),
 );

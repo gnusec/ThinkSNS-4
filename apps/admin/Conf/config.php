@@ -122,7 +122,7 @@ $menu = array(
 	 	'mobile' => array(
 	 		'3G版设置' => array(
 	 			'常规设置' => U('admin/Mobile/setting'),
-	 			'首页轮播' => U('admin/Mobile/w3gSlideShow'),
+	 			'广场轮播' => U('admin/Mobile/w3gSlideShow'),
 	 			'关于我们' => U('admin/Mobile/w3gAbout'),
 	 		),
 	 	),

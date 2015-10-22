@@ -4,7 +4,7 @@ class SquareAction extends Action {
 		header ( "Content-Type:application/x-javascript; charset=UTF8" );
 	}
 	
-	// PC端首页页面
+	// PC端广场页面
 	function home() {
 		$this->display ( 'Index/share' );
 	}

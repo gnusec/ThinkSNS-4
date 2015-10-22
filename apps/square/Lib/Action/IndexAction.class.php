@@ -21,7 +21,7 @@ class IndexAction extends Action {
 	}
 	/**
 	 * index
-	 * 好友的首页
+	 * 好友的广场
 	 *
 	 * @access public
 	 * @return void

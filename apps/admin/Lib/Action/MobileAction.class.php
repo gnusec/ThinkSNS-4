@@ -22,7 +22,7 @@ class MobileAction extends AdministratorAction
 	}
 
 	/**
-	 * 3G办首页轮播列表
+	 * 3G办广场轮播列表
 	 *
 	 * @return void
 	 * @author Medz Seven <lovevipdsw@vip.qq.com>
@@ -73,7 +73,7 @@ class MobileAction extends AdministratorAction
 	}
 
 	/**
-	 * [添加|编辑]3G版首页轮播
+	 * [添加|编辑]3G版广场轮播
 	 *
 	 * @return void
 	 * @author Medz Seven <lovevipdsw@vip.qq.com>

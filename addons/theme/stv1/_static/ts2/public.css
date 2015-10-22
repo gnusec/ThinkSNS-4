@@ -165,7 +165,7 @@ a:hover .imgSmall{cursor:url(http://timg.sjs.sinajs.cn/t3/style/images/common/sm
 .user_app .celerity_menu a.on .ico_favorites,.user_app .celerity_menu a.on .ico_comment
 {background: transparent url(images/ico_sidebar.png) no-repeat;display:inline-block}
 .ico_side{width:16px;height:16px;margin-right:5px;vertical-align: middle}
-.ico_square{background-position:0 -208px}.ico_square_on{background-position:-26px -208px}/*首页首页*/
+.ico_square{background-position:0 -208px}.ico_square_on{background-position:-26px -208px}/*广场首页*/
 .ico_billboard{background-position:0 -227px}.user_app .celerity_menu a.on .ico_billboard{background-position:-26px -227px}/*风云榜*/
 .ico_hall{background-position:0 -265px}.ico_hall_on{background-position:-26px -265px}/*名人堂*/
 .ico_screen{background-position:0 -246px}.ico_screen_on{background-position:-26px -246px}/*大屏幕*/

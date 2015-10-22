@@ -3,7 +3,7 @@ if (!defined('SITE_PATH')) exit();
 
 return array(
 	// 应用名称 [必填]
-	'NAME'						=> '首页',
+	'NAME'						=> '广场',
 	// 应用简介 [必填]
 	'DESCRIPTION'				=> '',
 	// 托管类型 [必填]（0:本地应用，1:远程应用）

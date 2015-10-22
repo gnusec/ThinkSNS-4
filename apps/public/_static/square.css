@@ -1,14 +1,14 @@
 .M_star{_height:800px;min-height:800px;}
-/*首页焦点图*/
+/*广场焦点图*/
 .img_switch_square{padding-bottom:20px;overflow:hidden;*zoom:1}
 .img_switch_square img{display:block}
 
-/*首页首页今日看点*/
+/*广场首页今日看点*/
 .Hotspot_box{background:url(../images/search_square_bg_t.png) no-repeat right top #EEF6F9;height:128px;border:#DEECF2 solid 1px;overflow:hidden}
 .hotspot_tit{line-height:35px;padding:0 10px;border-bottom:#DEECF2 solid 1px}
 .hotspot_tit span{float:right}
 
-/*首页首页搜索区*/
+/*广场首页搜索区*/
 .laSOSO{ padding:0;overflow:hidden;background:url(../images/search_square_bg_b.png) no-repeat left top #EEF4F8;height:70px;border-left:#DEECF2 solid 1px;border-right:#DEECF2 solid 1px;border-bottom:#DEECF2 solid 1px;border-top:#fff solid 1px;margin-bottom:20px}
 .laSOSO strong { line-height:24px}
 .laSOSO p.sosuo{}
@@ -91,7 +91,7 @@
 .firstNews h4 {width:410px;height:25px;margin:0 auto;overflow:hidden;padding-top:12px;line-height:25px;font-weight:normal;font-size:18px;font-family:"黑体";}
 .firstNews ul {width:410px;height:auto;overflow:hidden;_zoom:1;margin:0 0 0 12px;}
 .firstNews ul li {position:relative;width:410px;height:22px;line-height:22px;overflow:hidden;text-indent:10px;font-size:14px;background:url(../img/pic.gif) -298px -141px no-repeat;}
-/*首页下名人推荐*/
+/*广场下名人推荐*/
 .star_list{height:100px;padding:20px 0 0 0}
 .star_list dd{width:16%;text-align:center;float:left;overflow:hidden;*zoom:1}
 .star_list h4{padding:5px 0 0}
