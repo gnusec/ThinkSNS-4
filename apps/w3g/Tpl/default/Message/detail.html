@@ -34,10 +34,10 @@
                     foreach($r['data'] as $index=>$item){
                         if($profile['uid'] !== $item['from_uid']){
                             $conversation_item_class = 'conversation-item-left';
-                            $user_cache = $r['member'][0];
+                            $user_cache = $r['member'][1];
                         }else{
                             $conversation_item_class = 'conversation-item-right';
-                            $user_cache = $r['member'][1];
+                            $user_cache = $r['member'][0];
                         }
                 </php>
                 <div class="conversation-item {$conversation_item_class}">
