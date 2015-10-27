@@ -535,7 +535,7 @@ class IndexAction extends BaseAction {
 	}
 	
 	// @提到我的
-	public function atMe() {
+	public function atMeNO() {
 		$data ['page'] = $this->_page;
 		$data ['count'] = 20;
 		
@@ -616,9 +616,8 @@ class IndexAction extends BaseAction {
 	// msg box
 	public function msgbox() {
 		$mcount = D ( 'UserCount' )->getUnreadCount ( $this->mid );
-		$memus  = array('atme', 'comment', 'message', 'notify');
+		$memus  = array('comment', 'message', 'notify');
 		$selected = array(
-			'atme' => false,
 			'comment' => false,
 			'message' => false,
 			'notify'  => false,

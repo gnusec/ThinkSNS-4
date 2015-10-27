@@ -47,17 +47,20 @@
             频道
         </h1>
     </header>
+   <!--
     <div id="at" data-title="@我的消息"{$selected['atme']?' data-selected="true"':''} data-footer="msgbox-footer" data-defer="{:u('w3g/index/atme')}" data-menu="msgmenu" data-load="setPager4wechat(0)"></div>
+   -->
     <div id="replybox" data-title="收到的评论"{$selected['comment']?' data-selected="true"':''} data-footer="msgbox-footer" data-defer="{:u('w3g/index/replyMe')}" data-menu="msgmenu"  data-load="setPager4wechat(1)"></div>
     <div id="myreply" data-title="发出的评论" data-footer="msgbox-footer" data-defer="{:u('w3g/index/myreply')}" data-menu="msgmenu"  data-load="setPager4wechat(1)"></div>
     <div id="msg" data-title="我的私信"{$selected['message']?' data-selected="true"':''} data-footer="msgbox-footer" data-defer="{:u('w3g/Message/index')}" data-menu="msgmenu"  data-load="setPager4wechat(2)">
     </div>
     <div id="notify" data-title="系统通知"{$selected['notify']?' data-selected="true"':''} data-footer="msgbox-footer" data-defer="{:u('w3g/Message/notify')}" data-menu="msgmenu"  data-load="fixUrl();setPager4wechat(3)"></div>
     <footer id="msgbox-footer">
+        <!--
         <a href="#at" id="messageAt">
             <div>
                 <!--<i class="fa fa-flag-o"></i>-->
-                <img src="__APP__/img/sys/@wo--gray.png" alt="" class="normal"/>
+             <!--   <img src="__APP__/img/sys/@wo--gray.png" alt="" class="normal"/>
                 <img src="__APP__/img/sys/@wo-.png" alt="" class="active"/>
                 <p>
                 @我
@@ -65,8 +68,9 @@
                 <i class="num"></i>
             </div>
         </a>
+        -->
         <a href="#replybox" id="messageReplybox">
-            <div>
+            <div  style="width:33.33333%">
                 <!--<i class="fa fa-comment-o"></i>-->
                 <img src="__APP__/img/sys/pinlun-gray.png" alt="" class="normal"/>
                 <img src="__APP__/img/sys/pinlun.png" alt="" class="active"/>
@@ -77,7 +81,7 @@
             </div>
         </a>
         <a href="#myreply" id="messageMyreply" style="display:none;">
-            <div>
+            <div  style="width:33.33333%">
                 &lt;!&ndash;<i class="fa fa-comment-o"></i>&ndash;&gt;
                 <img src="__APP__/img/sys/sixin-gray.png" alt="" class="normal"/>
                 <img src="__APP__/img/sys/sixin.png" alt="" class="active"/>
@@ -88,7 +92,7 @@
             </div>
         </a>
         <a href="#msg" id="messageMsg">
-            <div>
+            <div  style="width:33.33333%">
                 <!--<i class="fa fa-envelope-o"></i>-->
                 <img src="__APP__/img/sys/sixin-gray.png" alt="" class="normal"/>
                 <img src="__APP__/img/sys/sixin.png" alt="" class="active"/>
@@ -99,7 +103,7 @@
             </div>
         </a>
         <a href="#notify" id="messageNotify">
-            <div>
+            <div  style="width:33.33333%">
                 <!--<i class="fa fa-bell-o"></i>-->
                 <img src="__APP__/img/sys/tongzhi-gray.png" alt="" class="normal"/>
                 <img src="__APP__/img/sys/tongzhi.png" alt="" class="active"/>
