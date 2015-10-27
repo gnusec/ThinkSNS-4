@@ -894,9 +894,8 @@ show header-bar in `48em`
         -ms-transition: all 0.2s ease-out;
         -o-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out;
-        position: absolute;
-        /*top: 3em;*/
-        bottom: 0;
+        /*position: absolute;*/
+        top: 3em;/*3.5em*/
         left: 0;
         right: 0;
         height: auto;
