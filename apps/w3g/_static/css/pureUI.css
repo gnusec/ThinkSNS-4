@@ -884,9 +884,10 @@ show header-bar in `48em`
         padding-left: 40px;
     }
     #header>h1 img{
-        height: 0.9em;
+        /*height: 0.9em;
         margin-top: 0.15em;
-        margin-bottom: -0.1em;
+        margin-bottom: -0.1em;*/
+        height: 1.3em;
     }
     #content>div{
         -webkit-transition: all 0.2s ease-out;
