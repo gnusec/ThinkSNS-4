@@ -1,6 +1,27 @@
 <include file="../Public/header" />
+<!--
+<style type="text/css">
+
+    a
+    {
+        letter-spacing: 1px;
+        line-height: 10px!important;
+
+    }
+    #ct>li
+    {
+        float: left;
+        width: 33.333%;
+        height:auto!important;
+        word-break: break-all;
+        list-style: none;
+        background: #000;
+        line-height:10%;
+    }
+</style>
+-->
 <div id="content" class="content">
-    <div id="list-friends" data-title="频道" data-selected="true" data-footer="none" data-rememberScroll="true">
+    <div id="list-friends" data-title="频道" data-selected="true" data-footer="none" data-rememberScroll="true" style="height:300px!important;">
         <header>
             <div id="header-buttons">
                 <a href="javascript:history.go(-1);">
@@ -29,7 +50,9 @@
                     <div class="type-list" id="channel_sort" style="display:none;">
                         <ul class="clearfixul pure-g">
                          <volist name="channelCategory" id="ct">
-                             <li class="pure-u-1-3 ts-listen <eq name="ct.channel_category_id" value="$cid">current</eq>" data-listen="weibo-channel-{$ct.channel_category_id}"><a href="javascript:;">{$ct.title}</a></li>
+                             <li  class="pure-u-1-3 ts-listen <eq name="ct.channel_category_id" value="$cid">current</eq>" data-listen="weibo-channel-{$ct.channel_category_id}"  style="float:left;width:33.333%;height:auto!important;">
+                             <a href="javascript:;" style="display: inline-block;line-height:20px!important;letter-spacing: 1px;text-align: center;margin: 5px;padding: 5px;"  >{$ct.title}</a>
+                             </li>
                          </volist>
                         </ul>
                     </div>
