@@ -230,7 +230,10 @@ class SmsModel extends Model
 			case 'ihuyi':
 				$result = $this->ihuyi($result);
 				break;
-			
+			/* # 云片网络 */
+			case 'yunpian':
+				$result = $this->yunpian($result);
+				break;
 			default:
 				$result = $this->auto($result);
 				break;
@@ -254,6 +257,23 @@ class SmsModel extends Model
 	{
 		$data = strtolower($data);
 		return strstr($data, $this->resultCode);
+	}
+
+	/**
+	 * 云片网络校验
+	 *
+	 * @param string $data 数据;
+	 * @return bool
+	 * @author yzhou
+	 **/
+	protected function yunpian($data)
+	{
+		$data = json_encode($data);
+		$data = json_decode($data, false);
+		if (intval($data->code) == 0) {
+			return true;
+		}
+		return false;
 	}
 
 	/**

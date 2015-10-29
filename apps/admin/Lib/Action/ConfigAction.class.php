@@ -2301,6 +2301,7 @@ define('UC_SYNC', {$ucopen});
 
 		$this->opt['service'] = array(
 			'auto'  => '自动判断',
+			'yunpian' => '云片网络',
 			'ihuyi' => '互亿无线'
 		);
 		
