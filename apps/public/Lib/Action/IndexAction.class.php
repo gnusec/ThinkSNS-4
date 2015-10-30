@@ -22,7 +22,7 @@ class IndexAction extends Action {
 		unset($weibaIfOpen, $channelIfOpen);
 
 		// 安全过滤
-		$d ['type'] = t ( $_GET ['type'] ) ? t ( $_GET ['type'] ) : 'all';
+		$d ['type'] = t ( $_GET ['type'] ) ? t ( $_GET ['type'] ) : 'following';
 		$d ['feed_type'] = t ( $_GET ['feed_type'] ) ? t ( $_GET ['feed_type'] ) : '';
 		$d ['feed_key'] = t ( $_GET ['feed_key'] ) ? t ( $_GET ['feed_key'] ) : '';
 		// 关注的人

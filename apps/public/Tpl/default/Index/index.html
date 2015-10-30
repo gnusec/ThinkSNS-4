@@ -126,8 +126,8 @@
               <div class="tab-menu line-b-animate"> 
               <php>$nowClass[$type] = 'current';</php>
                 <ul>
-                  <li class="{$nowClass['all']}"><span><a href="{:U('public/Index/index',array('type'=>'all'))}">全部</a></span></li>
                   <li class="{$nowClass['following']}"><span><a href="{:U('public/Index/index',array('type'=>'following'))}">关注</a></span></li>
+                  <li class="{$nowClass['all']}"><span><a href="{:U('public/Index/index',array('type'=>'all'))}">全部</a></span></li>
                   <if condition="$isChannelOpen"><li class="{$nowClass['channel']}"><span><a href="{:U('public/Index/index',array('type'=>'channel'))}">频道</a></span></li></if>
                   <?php if($weibaIfOpen) { ?>
                   <li class="{$nowClass['weiba']}"><span><a href="{:U('public/Index/index',array('type'=>'weiba'))}">帖子</a></span></li>

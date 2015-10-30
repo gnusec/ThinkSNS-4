@@ -46,8 +46,8 @@ class IndexAction extends BaseAction {
 			$this->display( 'index' );
 		}
 	}
-
-	public function index() {
+// fri_weibo 和 index两个方法互换了
+	public function fri_weibo() {
 		// POST 为加载更多，否则为分页加载，必须配合使用
 		$isPost = $_SERVER['REQUEST_METHOD'] == 'POST';
 		if($isPost){
@@ -182,7 +182,7 @@ class IndexAction extends BaseAction {
 	}
 
 	// 好友分享
-	public function fri_weibo() {
+	public function index() {
 		// POST 为加载更多，否则为分页加载，必须配合使用
 		$isPost = $_SERVER['REQUEST_METHOD'] == 'POST';
 		if($isPost){
