@@ -23,15 +23,19 @@
           <div class="clearfix mb20"> <a class="login-rm" event-node="login_remember" href="javascript:;"> <span class="check-ok">
             <input type="hidden" name="login_remember" value="0" id="check-box" class="checkbox"/>
             <!-- JS选择记住密码时要JS将login_remember值变为1 --></span>记住用户名</a> <a href="{:U('public/Passport/findPassword')}" class="login-fgetpwd">忘记密码？</a></div>
+         <!--
           <php>if(Addons::requireHooks('login_input_footer') && Addons::hook('login_input_footer')):</php>
               <div class="login-ft">
                   <div class="login-ft-head">使用第三方账号登录</div>
                   {:Addons::hook('login_input_footer')}
               </div>
          	<php>endif;</php>
-          <div class="hasno-account">
+         	-->
+          <div class="hasno-account" style="margin-top: -5px;">
             <p>还没有帐号？</p>
-            <div class="other-but"> <a  onclick="javascript:window.open('{:U('public/Register')}','_self')" class="white-but fl"><i class="arow-left"></i>去注册</a> <a href="{:U('public/Index/index')}" class="white-but fr">先看看<i class="arow-right"></i></a> </div>
+            <div class="other-but">
+                <a  onclick="javascript:window.open('{:U('public/Register')}','_self')" class="white-but fl"><i class="arow-left"></i>去注册</a>
+                <a href="{:U('public/Index/index')}" class="white-but fr">先看看<i class="arow-right"></i></a> </div>
           </div>
           <div id="js_login_input" style="display:none" class="error-box"></div>
         </div>

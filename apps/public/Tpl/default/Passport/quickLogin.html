@@ -1,5 +1,5 @@
 <style type="text/css">
-.qk-login-board {width: 300px;height: 400px;padding: 35px;border: none;float: left;background: #fff;}
+.qk-login-board {width: 300px;height: 300px;padding: 35px;border: none;float: left;background: #fff;}
 .qk-login-board h3{ text-align:center; font: 20px "microsoft yahei", Helvetica, Tahoma, Arial, "Microsoft jhengHei", sans-serif;height:20px;line-height:20px;}
 .qk-login-info{ width:100%; padding-top:35px;min-height:450px; position:relative;}
 .qk-login-info .qk-input-outer{height:46px; border:#858585 2px solid;margin-bottom:20px; position:relative;}
@@ -47,12 +47,13 @@
         <div class="clearfix qk-mb20">  没有账号，<a class="qk-blue" href="{:U('public/Register/index')}">点击注册</a> <a href="{:U('public/Passport/findPassword')}" class="qk-login-fgetpwd blue">忘记密码？</a></div>
         <div id="js_login_input" style="display:none" class="qk-error-box"></div>
         <div class="qk-login-ft">
+            <!--
         <div class="qk-login-ft-head">使用第三方账号登录</div>
         <php>if(Addons::requireHooks('login_input_footer') && Addons::hook('login_input_footer')):</php>
             {:Addons::hook('login_input_footer')}
         <php>endif;</php>
         </div>
-        
+        -->
       </div>
 </div>
 
