@@ -12,12 +12,12 @@
     <div class="channel-banner clearfix" style="background:url('<eq name='channel_banner' value=''>__THEME__/image/channel_default.png<else/>{$channel_banner}</eq>') no-repeat">
       <div class="channel-banner-button">
         <if condition="$GLOBALS['ts']['mid']">
-        <a class="channel-button-pub"  href="javascript:;" onclick="channel.contributeBox('{$cid}')" class="ml5"><span>投稿</span></a>
+        <a class="channel-button-pub"  href="javascript:;" onclick="channel.contributeBox('{$cid}')" class="ml5" style="background:white;color:#3C96E4;"><span>投稿</span></a>
         <php>if(!empty($cid)):</php>
           <php>if($followStatus):</php>
-          <a class="channel-button-listen" href="javascript:;" onclick="channel.upFollowStatus('{$GLOBALS['ts']['mid']}', '{$cid}', 'del', this)" class="ml10"><span><i class="ico-minus"></i>取消收听</span></a>
+          <a class="channel-button-listen" href="javascript:;" onclick="channel.upFollowStatus('{$GLOBALS['ts']['mid']}', '{$cid}', 'del', this)" class="ml10" style="background:white;color:#3C96E4;"><span><i class="ico-minus" ></i>取消收听</span></a>
           <php>else:</php>
-          <a class="channel-button-listen" href="javascript:;" onclick="channel.upFollowStatus('{$GLOBALS['ts']['mid']}', '{$cid}', 'add', this)" class="ml10"><span><i class="ico-add"></i>收听</span></a>
+          <a class="channel-button-listen" href="javascript:;" onclick="channel.upFollowStatus('{$GLOBALS['ts']['mid']}', '{$cid}', 'add', this)" class="ml10" style="background:white;color:#3C96E4;"><span ><i class="ico-add" style="color:#3C96E4"></i>收听</span></a>
           <php>endif;</php>
         <php>endif;</php>
         </if>
