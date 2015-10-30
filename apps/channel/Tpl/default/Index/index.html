@@ -36,6 +36,10 @@
       <a href="{:U('channel/Index/index',array('order'=>0,'cid'=>$cid))}" <eq name="order" value="0">class="selected"</eq>>最新</a>&nbsp;or&nbsp;<a href="{:U('channel/Index/index',array('order'=>1,'cid'=>$cid))}" <eq name="order" value="1">class="selected"</eq>>热门</a>
       </p>
     </div>
+    <!-- 投稿 -->
+    <div id="app_download">
+      <a class="app_download" href="javascript:;"  onclick="channel.contributeBox('40')"></a>
+    </div>
     <!-- 内容渲染 --> 
     {:W('Content', array('tpl'=>$tpl,'cid'=>$cid,'channelCategory'=>$channelCategory,'order'=>$order))}
    </div>
