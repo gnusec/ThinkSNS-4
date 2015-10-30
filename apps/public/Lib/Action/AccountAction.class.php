@@ -37,14 +37,14 @@ class AccountAction extends Action {
             'field_key' => 'avatar',
             'field_name' => L('PUBLIC_IMAGE_SETTING')
         ); // 头像设置
-        $tab_list [] = array(
-            'field_key' => 'domain',
-            'field_name' => L('PUBLIC_DOMAIN_NAME')
-        ); // 个性域名
-        $tab_list [] = array(
-            'field_key' => 'authenticate',
-            'field_name' => '申请认证'
-        ); // 申请认证
+        // $tab_list [] = array(
+        //     'field_key' => 'domain',
+        //     'field_name' => L('PUBLIC_DOMAIN_NAME')
+        // ); // 个性域名
+        // $tab_list [] = array(
+        //     'field_key' => 'authenticate',
+        //     'field_name' => '申请认证'
+        // ); // 申请认证
         $tab_list_score [] = array(
             'field_key' => 'scoredetail',
             'field_name' => L('积分规则')
@@ -508,7 +508,7 @@ class AccountAction extends Action {
      *
      * @return void
      */
-    public function authenticate() {
+    public function authenticateNO() {
         $auType = model('UserGroup')->where('is_authenticate=1')->findall();
         $this->assign('auType', $auType);
         $verifyInfo = D('user_verified')->where('uid=' . $this->mid)->find();
