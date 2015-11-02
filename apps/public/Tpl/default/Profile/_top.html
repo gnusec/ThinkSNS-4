@@ -1,7 +1,10 @@
 <div class="profile-title"> 
   <!--个人信息-->
   <div class="person-profile">
-    <div class="person-info-face"> <a href="{:U('public/Profile/index', array('uid'=>$uid))}" title="{$user_info[$uid]['uname']}"><img src="{$user_info[$uid]['avatar_big']}" /></a> </div>
+    <div class="person-info-face"> <a href="{:U('public/Profile/index', array('uid'=>$uid))}" title="{$user_info[$uid]['uname']}">
+  <img src="{$user_info[$uid]['avatar_big']}" />
+    </a>
+    </div>
     <div class="profile-info clearfix">
       <dl class="profile-info-t">
         <dt class="name mb10"><a href="{:U('public/Profile/index', array('uid'=>$uid))}">{$user_info[$uid]['uname']}</a>
@@ -9,7 +12,10 @@
 	        <!--<volist name="userGroupData[$user_info[$uid]['uid']]" id="vo">
 	        <img style="width:auto;height:auto;display:inline;cursor:pointer;vertical-align:-2px;" src="{$vo['user_group_icon_url']}" title="{$vo['user_group_name']}" />&nbsp;
 	        </volist>-->
-	        <a href="{:U('public/Account/scoredetail')}" target="_blank"><img style="width:48px;height:10px;display:inline;cursor:pointer;vertical-align:0;" src="{$userCredit.level.src}" event-node='ico_level_right' /></a></span>
+	        <a href="{:U('public/Account/scoredetail')}" target="_blank">
+             <!-- <img style="width:48px;height:10px;display:inline;cursor:pointer;vertical-align:0;" src="{$userCredit.level.src}" event-node='ico_level_right' />-->
+            </a>
+            </span>
         </dt>
         <dd class="from">来自：<if condition=" $user_info[$uid]['location'] eq '' ">都不知道来自哪里的，大概来自火星吧!<else/>{$user_info[$uid]['location']}</if>
         <if condition="$user_info[$uid]['sex'] eq 1">
